@@ -3,6 +3,9 @@ import { BrowserRouter } from 'react-router-dom'
 
 // englobar nossa aplicação ao Provider, assim ela tem acesso ao store
 import { Provider } from 'react-redux'
+
+import './config/ReactotronConfig'
+
 import store from './store'
 
 import Routes from './router'

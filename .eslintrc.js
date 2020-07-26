@@ -40,6 +40,8 @@ module.exports = {
         'singleQuote': true,
         'trailingComma': 'es5'
       }
-    ]
+    ],
+    // para aceitar o console.tron = tron
+    'no-console': ['error', {allow: ['tron']}],
   },
 };
