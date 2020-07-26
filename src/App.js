@@ -1,6 +1,10 @@
 import React from 'react'
 import { BrowserRouter } from 'react-router-dom'
 
+// englobar nossa aplicação ao Provider, assim ela tem acesso ao store
+import { Provider } from 'react-redux'
+import store from './store'
+
 import Routes from './router'
 // Tudo dentro que tem navegação deve estar dentro de BrowserRouter
 // nosso header terá navegação
@@ -12,11 +16,13 @@ import GlobalStyle from './styles/global'
 
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
-      <Routes />
-      <GlobalStyle />
-    </BrowserRouter>
+    <Provider store={store}>
+      <BrowserRouter>
+        <Header />
+        <Routes />
+        <GlobalStyle />
+      </BrowserRouter>
+    </Provider>
   )
 }
 
