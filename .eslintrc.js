@@ -43,5 +43,7 @@ module.exports = {
     ],
     // para aceitar o console.tron = tron
     'no-console': ['error', {allow: ['tron']}],
+    // para mudar valor de variavel vindo por parametro
+    'no-param-reassign':'off'
   },
 };
